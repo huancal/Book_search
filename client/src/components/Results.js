@@ -50,42 +50,14 @@ class Results extends Component {
                                 <div className="col-md-2">
                                     <img src={book.image} alt="book cover" />
                                 </div>
-
-
+                                <div className="col-md-10">
+                                    <p className="description">{book.description}</p>
+                                </div>
                             </div>
-
-
-
-
-
-
-
-
-
                         </div>
-
-
-
-
-
-
-
-
-
-
+                        <hr />
                     </div>
-
-
-
                 ))}
-
-
-
-
-
-
-
-
             </div>
         )
     }
