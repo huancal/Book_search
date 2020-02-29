@@ -15,10 +15,16 @@ import React, { Component } from 'react'
 class App extends React.Component {
   render() {
     return (
-      <div className = "App">
-        
-      </div>
-    )
+      <Router>
+        <Navbar />
+        <div className="App">
+          <Switch>
+            <Route exact path="/" component={Search} />
+            <Route exact path="/saved" component={Saved} />
+          </Switch>
+        </div>
+      </Router>
+    );
   }
 }
 
