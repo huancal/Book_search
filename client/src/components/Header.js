@@ -15,10 +15,10 @@ class Header extends React.Component {
                 <h1>Google Book Search</h1>
                 <h2>Search and save your favorite Books</h2>
                 <form>
-                    <div className="input-group">
-                        <input className="form-control" type="text" placeholder="Find your Book" value={this.props.search} onChange={this.props.updateInput} />
+                <div className="input-group">
+                        <input className="form-control" type="text" placeholder="Find a Book" value={this.props.search} onChange={this.props.updateInput}></input>
                         <button className="btn input-group-append" onClick={this.handleSubmit}>Search</button>
-                    </div>
+                </div>
                 </form>
             </div>
         )

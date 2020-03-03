@@ -5,24 +5,21 @@ import API from "../utility/API"
 import ReactDOM from "react-dom"
 
 class Search extends React.Component {
-    
-
     state = {
         books: [],
         search: "",
-        status: "search for a Book"
+        status: "Search for a Book!",
     }
-
     handleSearch = (search) => {
         API.searchBooks(search)
             .then(res => {
-                this.setState({ books: res.data, status: "search results" })
-                console.log(this.state);
+                this.setState({ books: res.data, status: "Search Results:" })
+                console.log(this.state)
                 const results = ReactDOM.findDOMNode(this.refs.test);
-                results.scrollIntoView({ behavior: "smooth" });
+                results.scrollIntoView({behavior: 'smooth'});
             })
     }
-    updateIput = (event) => {
+    updateInput = (event) => {
         this.setState({
             search: event.target.value
         })
@@ -30,7 +27,6 @@ class Search extends React.Component {
     componentWillUnmount() {
         API.deleteAllUnsaved()
     }
-
     render() {
         return (
             <div>
