@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 
 
 
-class Navbar extends Component {
+class Navbar extends React.Component {
     render() {
         return (
             <nav className="navbar fixed-top">

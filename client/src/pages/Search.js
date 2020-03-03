@@ -4,8 +4,8 @@ import Results from "../components/Results"
 import API from "../utility/API"
 import ReactDOM from "react-dom"
 
-class Search extends Component {
-    h
+class Search extends React.Component {
+    
 
     state = {
         books: [],

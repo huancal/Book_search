@@ -10,7 +10,7 @@ import Navbar from "./components/Navbar"
 import Search from "./pages/Search"
 import Saved from "./pages/Saved"
 
-import React, { Component } from 'react'
+
 
 class App extends React.Component {
   render() {
@@ -31,3 +31,5 @@ class App extends React.Component {
 
 
 export default App;
+
+

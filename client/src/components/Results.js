@@ -4,7 +4,7 @@ import API from "../utility/API"
 
 
 
-class Results extends Component {
+class Results extends React.Component {
 
     handleSave = (id) => {
         API.saveBook(id).then(res => console.log(res.data))
